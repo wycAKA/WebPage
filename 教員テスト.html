@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title></title>
+
+		<link href="http://vjs.zencdn.net/4.3/video-js.css" rel="stylesheet">
+		<link href="src/to/videojs.markers.css" rel="stylesheet">
+		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+
+		<script src="http://code.jquery.com/jquery-2.0.3.min.js"> </script>
+		<script src="http://vjs.zencdn.net/4.3/video.js"></script>
+		<script src='src/to/videojs.markers.js'></script>
+		
+		<style type="text/css">
+			body{
+				margin: 0px;
+			}
+			.zhezhao{
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				background: #000;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.5);
+			}
+			.zhezhao1{
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				background: #000;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.5);
+			}
+			.zhezhao2{
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				background: #000;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.5);
+			}
+			.zhezhao3{
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				background: #000;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.5);
+			}
+			.zhezhao3{
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				background: #000;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.5);
+			}
+			.zhezhao4{
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				background: #000;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.5);
+			}
+			.zhezhao5{
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				background: #000;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.5);
+			}
+			.zhezhao6{
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				background: #000;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.5);
+			}
+			
+			
+			.tankuang{
+				position: relative;
+				background: #fff;
+				width: 50%;
+				height: 80%;
+				border-radius: 5px;
+				margin: 5% auto;
+			}
+			.tankuang1{
+				position: relative;
+				background: #fff;
+				width: 50%;
+				height: 80%;
+				border-radius: 5px;
+				margin: 5% auto;
+			}
+			.tankuang2{
+				position: relative;
+				background: #fff;
+				width: 50%;
+				height: 80%;
+				border-radius: 5px;
+				margin: 5% auto;
+			}
+			.tankuang3{
+				position: relative;
+				background: #fff;
+				width: 50%;
+				height: 80%;
+				border-radius: 5px;
+				margin: 5% auto;
+			}
+			.tankuang4{
+				position: relative;
+				background: #fff;
+				width: 50%;
+				height: 80%;
+				border-radius: 5px;
+				margin: 5% auto;
+			}
+			.tankuang5{
+				position: relative;
+				background: #fff;
+				width: 50%;
+				height: 80%;
+				border-radius: 5px;
+				margin: 5% auto;
+			}
+			#header{
+				height: 40px;
+			}
+			#header-right{
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				border-radius: 5px;
+				background: red;
+				color: #fff;
+				right: 5px;
+				top: 5px;
+				text-align: center;
+			}
+		</style>
+
+
+	</head>
+	<body>
+		
+		
+		
+		<table border="1px" width="1400px" height="120px" cellspacing="0px" cellpadding="0px">
+			<thead>
+				<tr align="center">
+					<th>言葉の振り返り</th>
+					<th>ne/po</th>
+					<th>字幕</th>
+					<th>動作の振り返り</th>
+					<th>推奨動作</th>
+					<th>Pro/New</th>
+					<th>ベストな動きの出力</th>
+					
+					
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td><a href="hyperlinkurl" id="chapter2">言葉1</a></td>
+					<td>po</td>
+					<td>指示:ただもう1個質問があります、その中でカメラが付いている端末を持っている人は何人いますか?<br />説明文:あ,やっぱり皆は持ってるですね</td>
+					<td><a href="hyperlinkur1" id="chapter10">動作1</td>
+					<td>
+						<button type="button" onclick="dianwo()">CLICK</button>
+						<div class="zhezhao" id='zhezhao'>
+							<div class="tankuang">
+								<div id="header">
+									<span>このような動きを推奨しますよ~</span>
+									<div id="header-right" onclick="hidder()">x</div>
+								</div>
+								<div>
+									<video id="test_video" loop controls="controls" preload="none" class="video-js vjs-default-skin" width="950" height="600">
+										    <source src="../Unity/movie_015.mp4" type="video/mp4">
+										    <!-- <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm"> -->
+										</video>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>New</td>
+					<td>生徒を指す-立って話す-黒板を指す</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="hyperlinkurl" id="chapter3">言葉2</a></td>
+					<td>po</td>
+					<td>指示:今のスマホどうか,DSのカメラと皆さんは使ったことがあるかどうかをわからないけど、使い捨てカメラ上を回してカッシャって撮るやつどうか昔の一眼レフ、所謂フィルムが入って撮影するようなカメラ。この2つの違いをちゃんと説明できる人がいますか?<br />説明文:というわけで高校入試の問題を思い出しましょう</td>
+					<td><a href="hyperlinkur1" id="chapter11">動作2</td>
+					<td>
+						<button type="button" onclick="dianwo1()">CLICK</button>
+						<div class="zhezhao1" id='zhezhao1'>
+							<div class="tankuang1">
+								<div id="header">
+									<span>このような動きを推奨しますよ~</span>
+									<div id="header-right" onclick="hidder1()">x</div>
+								</div>
+								<div>
+									<video id="test_video" loop controls="controls" preload="none" class="video-js vjs-default-skin" width="950" height="600">
+										    <source src="../Unity/movie_016.mp4" type="video/mp4">
+										    <!-- <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm"> -->
+										</video>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>New</td>
+					<td>立って話す-板書を書く-黒板を指す</td>
+					<td></td>
+					
+					
+				</tr>
+				<tr>
+					<td><a href="hyperlinkurl" id="chapter4">言葉3</a></td>
+					<td>po</td>
+					<td>指示:じゃ、山田くん。今言った光から入ってきたこのフィルムという紙に焼き付けて保存する方法。使い捨てカメラが利用しているのはアナログとデジタルのどちらですか?<br />説明文:そうやね、アナログやね。</td>
+					
+					<td><a href="hyperlinkur1" id="chapter12">動作3</td>
+					<td>
+						<button type="button" onclick="dianwo2()">CLICK</button>
+						<div class="zhezhao2" id='zhezhao2'>
+							<div class="tankuang2">
+								<div id="header">
+									<span>このような動きを推奨しますよ~</span>
+									<div id="header-right" onclick="hidder2()">x</div>
+								</div>
+								<div>
+									<video id="test_video" loop controls="controls" preload="none" class="video-js vjs-default-skin" width="950" height="600">
+										    <source src="../Unity/movie_017.mp4" type="video/mp4">
+										    <!-- <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm"> -->
+										</video>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>New</td>
+					<td>板書を書く-立って話す-板書を書く</td>
+				</tr>
+				
+				<tr>
+					<td><a href="hyperlinkurl" id="chapter5">言葉4</a></td>
+					<td>po</td>
+					<td>指示:二人は登ろとしている動作が一緒、何が違うやろ、なんかあるじゃないかな、誰かわかる人がいるかな?<br />説明文:田中さんどうぞ、そうだね、そうそう。</td>
+					<td><a href="hyperlinkur1" id="chapter13">動作4</td>
+					<td>
+						<button type="button" onclick="dianwo3()">CLICK</button>
+						<div class="zhezhao3" id='zhezhao3'>
+							<div class="tankuang3">
+								<div id="header">
+									<span>このような動きを推奨しますよ~</span>
+									<div id="header-right" onclick="hidder3()">x</div>
+								</div>
+								<div>
+									<video id="test_video" loop controls="controls" preload="none" class="video-js vjs-default-skin" width="950" height="600">
+										    <source src="../Unity/movie_018.mp4" type="video/mp4">
+										    <!-- <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm"> -->
+										</video>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>New</td>
+					<td>黒板を指す-手を広げる-立って話す</td>
+				</tr>
+				<tr>
+					<td><a href="hyperlinkurl" id="chapter6">言葉5</a></td>
+					<td>po</td>
+					<td>指示:これやったら、時計に例えるとデジタルのほうがいいなと思う人は何人ぐらい居るかな?<br />説明文:結構居るね</td>
+					<td><a href="hyperlinkur1" id="chapter14">動作5</td>
+					<td>
+						<button type="button" onclick="dianwo4()">CLICK</button>
+						<div class="zhezhao4" id='zhezhao4'>
+							<div class="tankuang4">
+								<div id="header">
+									<span>このような動きを推奨しますよ~</span>
+									<div id="header-right" onclick="hidder4()">x</div>
+								</div>
+								<div>
+									<video id="test_video" loop controls="controls" preload="none" class="video-js vjs-default-skin" width="950" height="600">
+										    <source src="../Unity/movie_020.mp4" type="video/mp4">
+										    <!-- <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm"> -->
+										</video>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>New</td>
+					<td>立って話す-手を広げる-板書を書く-立って話す</td>
+				</tr>
+				<tr>
+					<td><a href="hyperlinkurl" id="chapter7">言葉6</a></td>
+					<td>po</td>
+					<td>指示:じゃ、アナログの方がいいよって人?<br />説明文:やっぱり、半々ぐらい居るね</td>
+					<td><a href="hyperlinkur1" id="chapter15">動作6</td>
+					<td>
+						<button type="button" onclick="dianwo5()">CLICK</button>
+						<div class="zhezhao5" id='zhezhao5'>
+							<div class="tankuang">
+								<div id="header">
+									<span>このような動きを推奨しますよ~</span>
+									<div id="header-right" onclick="hidder5()">x</div>
+								</div>
+								<div>
+									<video id="test_video" loop controls="controls" preload="none" class="video-js vjs-default-skin" width="950" height="600">
+										    <source src="../Unity/movie_021.mp4" type="video/mp4">
+										    <!-- <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm"> -->
+										</video>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>New</td>
+					<td>黒板を指す-板書を書く-立って話す-板書を書く</td>
+				</tr>
+				
+				<tr>
+					<td><a href="hyperlinkurl" id="chapter8">言葉7</a></td>
+					<td>po</td>
+					<td>指示:実際にお父さんが運転しているところを見てここをデジタルにしたらやばいよな、多分今から説明して理解できると思う。誰かわかるかな?<br />説明文:車の中に載っているメーターって言ったら、そうやね。スピードメーター</td>
+					<td><a href="hyperlinkur1" id="chapter16">動作7</td>
+					<td>
+						<button type="button" onclick="dianwo6()">CLICK</button>
+						<div class="zhezhao6" id='zhezhao6'>
+							<div class="tankuang">
+								<div id="header">
+									<span>このような動きを推奨しますよ~</span>
+									<div id="header-right" onclick="hidder6()">x</div>
+								</div>
+								<div>
+									<video id="test_video" loop controls="controls" preload="none" class="video-js vjs-default-skin" width="950" height="600">
+										    <source src="../Unity/movie_022.mp4" type="video/mp4">
+										    <!-- <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm"> -->
+										</video>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>New</td>
+					<td>立って話す-手を広げる-生徒を指す-立って話す</td>
+				</tr>
+				
+				
+				
+				<tr>
+					<td><a href="hyperlinkurl" id="end">終了</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+			
+			
+			
+			
+			
+			
+			
+			
+		
+			
+		
+		
+		<video id="test_video" controls preload="none" class="video-js vjs-default-skin" width="1400" height="500">
+		    <source src="../My Video1.mp4" type="video/mp4">
+		    <!-- <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm"> -->
+		</video>
+		
+		
+		
+		
+		
+		<script type="text/javascript">
+			document.getElementById('zhezhao').style.display="none";
+			document.getElementById("zhezhao1").style.display="none";
+			document.getElementById("zhezhao2").style.display="none";
+			document.getElementById("zhezhao3").style.display="none";
+			document.getElementById("zhezhao4").style.display="none";
+			document.getElementById("zhezhao5").style.display="none";
+			document.getElementById("zhezhao6").style.display="none";
+			
+			
+			
+			
+			function dianwo(){
+				document.getElementById('zhezhao').style.display="";
+			}
+			function hidder(){
+				document.getElementById('zhezhao').style.display="none";
+			}
+			
+			function dianwo1(){
+				document.getElementById('zhezhao1').style.display="";
+			}
+			function hidder1(){
+				document.getElementById('zhezhao1').style.display="none";
+			}
+			
+			function dianwo2(){
+				document.getElementById('zhezhao2').style.display="";
+			}
+			function hidder2(){
+				document.getElementById('zhezhao2').style.display="none";
+			}
+			function dianwo3(){
+				document.getElementById('zhezhao3').style.display="";
+			}
+			function hidder3(){
+				document.getElementById('zhezhao3').style.display="none";
+			}
+			
+			function dianwo4(){
+				document.getElementById('zhezhao4').style.display="";
+			}
+			function hidder4(){
+				document.getElementById('zhezhao4').style.display="none";
+			}
+			
+			function dianwo5(){
+				document.getElementById('zhezhao5').style.display="";
+			}
+			function hidder5(){
+				document.getElementById('zhezhao5').style.display="none";
+			}
+			
+			function dianwo6(){
+				document.getElementById('zhezhao6').style.display="";
+			}
+			function hidder6(){
+				document.getElementById('zhezhao6').style.display="none";
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			var video = videojs('test_video');
+
+			$('#chapter2').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(43);
+			});
+
+
+			$('#chapter3').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(60);
+			});
+			
+			$('#chapter4').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(171);
+			});
+			
+			$('#chapter5').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(367);
+			});
+			
+			$('#chapter6').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(522);
+			});
+			
+			$('#chapter7').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(532);
+			});
+			
+			$('#chapter8').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(592);
+			});
+			
+			
+			
+			$('#chapter10').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(77);
+			});
+			$('#chapter11').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(127);
+			});
+			$('#chapter12').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(137);
+			});
+			$('#chapter13').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(193);
+			});
+			$('#chapter14').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(252);
+			});
+			$('#chapter15').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(360);
+			});
+			$('#chapter16').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(573);
+			});
+			
+			
+
+			$('#end').on('click', function (e) {
+			    e.preventDefault();
+			    video.currentTime(914);
+			});
+
+			video.on('ended', function(){
+			    alert('the end');
+			});
+
+
+			//load the marker plugin
+			video.markers({
+			    setting: {
+			        markerTip: {
+			            default_text: ""
+			        },
+			        breakOverlay: {　//各タグの割り込みオーバーライドオプション
+			            display: true,//オーバーレイを表示するかどうか
+			            display_time: 3,
+			            default_text: "Chapter"
+			        }
+			    },
+			    //set break time
+			    marker_breaks: [1, 9.5, 16, 23.6, 28, 36],
+			    marker_text: ["1", "2", "3", "4", "5", "6"]
+			});
+
+			video.play();
+
+		</script>
+	</body>
+</html>
